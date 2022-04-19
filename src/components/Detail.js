@@ -19,12 +19,18 @@ function Detail() {
           <span>TRAILER</span>
         </TrailerButton>
         <AddButton>
-
+          <span>+</span>
         </AddButton>
         <GroupWatchButton>
-
+          <img src="images/group-icon.png" alt="" />
         </GroupWatchButton>
       </Controls>
+      <SubTitle>
+        2018 . 7m .Family, Fantasy, Kids, Animation
+      </SubTitle>
+      <Description>
+        hjgkhkhgkhfkhfkhfkhfkhfgkhfhgfhfkhgfghfhkgf
+      </Description>
     </Container>
   )
 }
@@ -50,7 +56,7 @@ object-fit:cover;
 }
 `
 const ImgTitle = styled.div`
-height:30vh;
+height:25vh;
 min-height:170px;
 min-width:200px;
 width:35vw;
@@ -62,6 +68,8 @@ img{
 `
 const Controls = styled.div`
 display:flex;
+align-items: center;
+margin:20px;
 `
 const PlayButton = styled.button`
 border-radius:4px;
@@ -86,8 +94,34 @@ color:rgb(249,249,249);
 text-transform:uppercase;
 `
 const AddButton = styled.button`
-
+margin-right:16px;
+width:44px;
+height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+border:2px solid white;
+background-color:rgba(0,0,0,0.6);
+cursor:pointer:
+span{
+  font-size:30px;
+  color:white;
+}
 `
-const GroupWatchButton = styled.button`
-
+const GroupWatchButton = styled(AddButton)`
+background-color:rgba(0,0,0);
+`
+const SubTitle = styled.div`
+color:rgb(249,249,249);
+font-size:15px;
+min-height:20px;
+margin-top:26px;
+margin-left:20px;
+`
+const Description = styled.div`
+line-height:1.4px;
+font-size:20px;
+margin:16px;
+color:rgb(249,249,249);
 `
